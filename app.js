@@ -28,3 +28,13 @@ div.appendChild(divParagraph);
 div.setAttribute("style", "border: solid black 1px; background: pink");
 
 container.appendChild(div);
+
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", function (e) {
+  console.log(e);
+});
+
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
